@@ -1,5 +1,6 @@
 package com.example.clase9wsgtics.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,11 +20,11 @@ public class Product {
     @Column(name = "ProductName", nullable = false, length = 40)
     private String productName;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "SupplierID")
     private Supplier supplierID;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "CategoryID")
     private Category categoryID;
 
