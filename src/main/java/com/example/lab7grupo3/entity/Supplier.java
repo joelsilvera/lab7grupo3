@@ -1,4 +1,4 @@
-package com.example.clase9wsgtics.entity;
+package com.example.lab7grupo3.entity;
 
 import lombok.Getter;
 import lombok.Setter;

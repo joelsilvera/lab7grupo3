@@ -1,6 +1,6 @@
-package com.example.clase9wsgtics.repository;
+package com.example.lab7grupo3.repository;
 
-import com.example.clase9wsgtics.entity.Supplier;
+import com.example.lab7grupo3.entity.Supplier;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
