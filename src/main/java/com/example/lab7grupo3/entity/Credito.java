@@ -14,7 +14,7 @@ public class Credito {
     @Column(name = "monto", length = 45)
     private String monto;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne
     @JoinColumn(name = "usuarios_id", nullable = false)
     private Usuario usuarios;
 

@@ -20,7 +20,7 @@ public class Solicitud {
     @Column(name = "solicitud_fecha")
     private Instant solicitudFecha;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne
     @JoinColumn(name = "usuarios_id", nullable = false)
     private Usuario usuarios;
 
